@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>esg playbook</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      #dashboard {
+        margin: 50px auto;
+        width: 400px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-top: 0;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+      input[type="text"] {
+        width: 100%;
+        height: 40px;
+        font-size: 18px;
+        padding: 5px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: #9b59b6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease;
+      }
+      button:hover {
+        background-color: #8e44ad;
+        transform: translateY(-2px);
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="dashboard">
+      <h1>esg dashboard</h1>
+      <label for="tickerInput">enter ticker symbol:</label>
+      <input type="text" id="tickerInput" placeholder="AAPL">
+      <button id="submitButton">submit</button>
+      <h2 style="text-decoration: underline;">
+        <span id="scoreTitle"></span>
+      </h2>
+      <p>total esg score: <span id="totalEsg"></span></p>
+      <p>environment score: <span id="environmentScore"></span></p>
+      <p>social score: <span id="socialScore"></span></p>
+      <p>governance score: <span id="governanceScore"></span></p>
+      <h2 style="text-decoration: underline;">
+        <span>peer scores</span>
+      </h2>
+      <p>total esg score: <span id="totalEsgpeer"></span></p>
+      <p>environment score: <span id="environmentScorepeer"></span></p>
+      <p>social score: <span id="socialScorepeer"></span></p>
+      <p>governance score: <span id="governanceScorepeer"></span></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
